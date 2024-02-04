@@ -10,7 +10,7 @@ import (
 
 
 func WelcomeMessage(w http.ResponseWriter, r *http.Request){
-	fmt.Println(w, "Welcome!")
+	fmt.Println(w, "Welcome! That's my weekly diary of tasks, those I should do")
 }
 
 func HealthCheck(w http.ResponseWriter, r *http.Request){
@@ -33,7 +33,7 @@ func DiaryDaily(w http.ResponseWriter, r *http.Request){
 	if found {
 		json.NewEncoder(w).Encode(player)
 	} else {
-		fmt.Fprintf(w, "There is no player with such shirt number!")
+		fmt.Fprintf(w, "Such a lot of days in one week?")
 	}
 	
 }
