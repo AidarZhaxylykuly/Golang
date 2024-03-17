@@ -1,12 +1,11 @@
-package handlers
-
+package models
 
 type Day struct {
-    Number       int    `json:"number"`
-    NameoftheDay string `json:"nameoftheday"`
-    Lessons      string `json:"lessons"`
-    HomeWork     string `json:"homework"`
-    Leisure      string `json:"leisure"`
+	Number       int    `json:"number"`
+	NameoftheDay string `json:"nameoftheday"`
+	Lessons      string `json:"lessons"`
+	HomeWork     string `json:"homework"`
+	Leisure      string `json:"leisure"`
 }
 
 var Days = []Day{
@@ -19,7 +18,7 @@ var Days = []Day{
 	{NameoftheDay: "Sunday", Lessons: "ICT", HomeWork: "Golang", Leisure: "Football: Liverpool v Arsenal"},
 }
 
-func AllWeeklyTasks() []Day{
+func AllWeeklyTasks() []Day {
 	return Days
 }
 
