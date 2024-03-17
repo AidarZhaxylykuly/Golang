@@ -10,14 +10,9 @@ import (
 	"github.com/gorilla/mux"
 )
 
-<<<<<<< HEAD
 func WelcomeMessage(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Welcome! That's my weekly diary of tasks, those I should do")
-=======
-func WelcomeMessage(w http.ResponseWriter, r *http.Request){
-	fmt.Println(w, "Welcome! That's my weekly diary of tasks, those I should do")
->>>>>>> 65e4009f14743a6227e0bcc1b7d18e47251d4772
-}
+
 
 func HealthCheck(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
